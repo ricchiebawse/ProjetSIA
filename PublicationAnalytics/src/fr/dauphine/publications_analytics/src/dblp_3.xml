@@ -1,0 +1,102 @@
+<dblp>
+<book mdate="2002-01-03" key="books/aw/CeriF97">
+    <author>Stefano Ceri</author>
+    <author>Piero Fraternali</author>
+    <title>Designing Database Applications with Objects and Rules: The IDEA Methodology</title>
+    <publisher href="db/publishers/aw.html">Addison-Wesley</publisher>
+    <year>1997</year>
+    <isbn>0-201-40369-2</isbn>
+</book>
+<book mdate="2002-01-03" key="books/bc/BatiniCN92">
+    <author>Carlo Batini</author>
+    <author>Stefano Ceri</author>
+    <author>Shamkant B. Navathe</author>
+    <title>Conceptual Database Design: An Entity-Relationship Approach.</title>
+    <publisher>Benjamin/Cummings</publisher>
+    <year>1992</year>
+    <isbn>0-8053-0244-1</isbn>
+</book>
+<incollection mdate="2008-02-24" key="books/crc/tucker97/CeriR97">
+    <author>Stefano Ceri</author>
+    <author>Raghu Ramakrishnan</author>
+    <title>Rules in Data-Based Systems.</title>
+    <pages>1142-1157</pages>
+    <year>1997</year>
+    <crossref>books/crc/tucker1997</crossref>
+    <booktitle>The Computer Science and Engineering Handbook</booktitle>
+    <url>db/books/collections/tucker97.html#CeriR97</url>
+</incollection>
+<article mdate="2013-01-05" key="journals/bmcbi/JuppHIKOSWS12">
+    <author>Simon Jupp</author>
+    <author>Matthew Horridge</author>
+    <author>Luigi Iannone</author>
+    <author>Julie Klein</author>
+    <author>Stuart Owen</author>
+    <author>Joost Schanstra</author>
+    <author>Katy Wolstencroft</author>
+    <author>Robert Stevens</author>
+    <title>Populous: a tool for building OWL ontologies from templates.</title>
+    <pages>S5</pages>
+    <year>2012</year>
+    <volume>13</volume>
+    <journal>BMC Bioinformatics</journal>
+    <number>S-1</number>
+    <ee>http://dx.doi.org/10.1186/1471-2105-13-S1-S5</ee>
+    <url>db/journals/bmcbi/bmcbi13S.html#JuppHIKOSWS12</url>
+</article>
+<article mdate="2006-05-17" key="journals/bmcbi/JonesP05">
+    <author>Andrew R. Jones</author>
+    <author>Norman W. Paton</author>
+    <title>An analysis of extensible modelling for functional genomics data.</title>
+    <pages>235</pages>
+    <year>2005</year>
+    <volume>6</volume>
+    <journal>BMC Bioinformatics</journal>
+    <ee>http://dx.doi.org/10.1186/1471-2105-6-235</ee>
+    <url>db/journals/bmcbi/bmcbi6.html#JonesP05</url>
+</article>
+<inproceedings mdate="2011-08-10" key="conf/icsnw/Paton04">
+    <author>Norman W. Paton</author>
+    <title>Databases and the Grid: JDBC in WSDL, or Something Altogether Different?</title>
+    <pages>1-13</pages>
+    <ee>http://dx.doi.org/10.1007/978-3-540-30145-5_1</ee>
+    <year>2004</year>
+    <crossref>conf/icsnw/2004</crossref>
+    <booktitle>ICSNW</booktitle>
+    <url>db/conf/icsnw/icsnw2004.html#Paton04</url>
+</inproceedings>
+<inproceedings mdate="2011-08-10" key="conf/icsnw/ColletBBBBFJKLTVVX04">
+    <author>Christine Collet</author>
+    <author>Khalid Belhajjame</author>
+    <author>Gilles Bernot</author>
+    <author>Christophe Bobineau</author>
+    <author>Gennaro Bruno</author>
+    <author>Batrice Finance</author>
+    <author>Fabrice Jouanot</author>
+    <author>Zoubida Kedad</author>
+    <author>David Laurent</author>
+    <author>Fariza Tahi</author>
+    <author>Genoveva Vargas-Solar</author>
+    <author>Tuyet-Trinh Vu</author>
+    <author>Xiaohui Xue</author>
+    <title>Towards a Mediation System Framework for Transparent Access to Largely Distributed Sources. The MediaGrid Project.</title>
+    <pages>65-78</pages>
+    <ee>http://dx.doi.org/10.1007/978-3-540-30145-5_4</ee>
+    <year>2004</year>
+    <crossref>conf/icsnw/2004</crossref>
+    <booktitle>ICSNW</booktitle>
+    <url>db/conf/icsnw/icsnw2004.html#ColletBBBBFJKLTVVX04</url>
+</inproceedings>
+<inproceedings mdate="2011-10-26" key="conf/icsm/WillmorES04">
+    <author>David Willmor</author>
+    <author>Suzanne M. Embury</author>
+    <author>Jianhua Shao</author>
+    <title>Program Slicing in the Presence of a Database State.</title>
+    <pages>448-452</pages>
+    <year>2004</year>
+    <crossref>conf/icsm/2004</crossref>
+    <booktitle>ICSM</booktitle>
+    <ee>http://doi.ieeecomputersociety.org/10.1109/ICSM.2004.1357833</ee>
+    <url>db/conf/icsm/icsm2004.html#WillmorES04</url>
+</inproceedings>
+</dblp>
