@@ -1,18 +1,12 @@
 package fr.dauphine.publications_analytics.src.Task3;
 
-import java.util.Collections;
 import java.util.List;
-import java.util.ListIterator;
 
-/*ListIterator<Double> itr = list.listIterator();
-while( itr.hasNext() ){
-    System.out.println( itr.next() );
-}*/
+
 
 public class UserStory3 extends XMLPublicationTask3{
 	public double questionAMean (String file_name){
 		//Mean number of publication in a year
-
 		List<Double> list = (get_number_of_publication_by_data(file_name,get_data_by_type(file_name, "year", "*") , "year", "*"));
 		return get_mean(list);
 	}

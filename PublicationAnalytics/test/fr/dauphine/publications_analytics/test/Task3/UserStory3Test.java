@@ -12,7 +12,7 @@ public class UserStory3Test {
 	public void questionAMean() {
 		String file_name = "../dblp_US2-3.xml";
 		UserStory3 xb = new UserStory3();	
-		
+
 		//System.out.println(df.format(xb.questionAMean(file_name)));
 		assertEquals(1.333, xb.questionAMean(file_name), 0.1);
 	}
@@ -21,7 +21,7 @@ public class UserStory3Test {
 	public void questionBMean() {
 		String file_name = "../dblp_US2-3.xml";
 		UserStory3 xb = new UserStory3();	
-		
+	
 		//System.out.println(df.format(xb.questionBMean(file_name)));
 		assertEquals(0.167, xb.questionBMean(file_name), 0.1);
 	}
@@ -132,5 +132,4 @@ public class UserStory3Test {
 		assertEquals(0.0, xb.questionEMode(file_name), 0.1);
 	}
 	
-
 }
