@@ -10,7 +10,7 @@ import org.junit.Test;
 import fr.dauphine.publications_analytics.src.Task4.UserStory1;
 
 public class UserStory1Test {
-
+	
 	@Test
 	public void question1() {
 		//TODO : Ajouter Spec de la questions US1
@@ -37,4 +37,5 @@ public class UserStory1Test {
 			 	System.out.println("--------------------------------***");
 		}
 	}
+	
 }
