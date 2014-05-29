@@ -28,7 +28,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class IHMFrame extends JFrame {
+public class IHMUserStory4 extends JFrame {
 
     private int currentCard = 1;
     private ArrayList<JList> listJlist;
@@ -59,11 +59,11 @@ public class IHMFrame extends JFrame {
 		scrollPane.setViewportView(list);
 	
     }
-    public IHMFrame() {
+    public IHMUserStory4(String file) {
     		us = new UserStory1();	   
-    		file_name="../dblp_US2-3.xml";
-
-            setTitle("ISI2");
+    		//file_name="../dblp_US2-3.xml";
+    		file_name=file;
+            setTitle("SIA2 - Task4");
             setSize(500, 300);
             cardPanel = new JPanel();
 
@@ -143,7 +143,9 @@ public class IHMFrame extends JFrame {
     }
 
     public static void main(String[] args) {
-            IHMFrame cl = new IHMFrame();
+            IHMUserStory4 cl = new IHMUserStory4("../dblp_US2-3.xml");
+        //IHMFrame cl = new IHMFrame("/Users/ricchie/Documents/workspace/PublicationAnalyticsRichIHM/src/fr/dauphine/publications_analytics/src/dblp_2.xml");
+
             cl.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             cl.setVisible(true);
     }
