@@ -18,7 +18,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 
 import fr.dauphine.publications_analytics.src.Task3.XMLPublicationTask3;
-import fr.dauphine.publications_analytics.src.Task4.UserStory1;
+import fr.dauphine.publications_analytics.src.Task4.XMLPublicationTask4;
 
 import javax.swing.JScrollPane;
 import javax.swing.JPopupMenu;
@@ -34,7 +34,7 @@ public class IHMUserStory4 extends JFrame {
     private ArrayList<JList> listJlist;
     private JPanel cardPanel;
     private CardLayout cl;
-    private UserStory1 us;
+    private XMLPublicationTask4 us;
     private JButton b2;
     private String file_name;
     
@@ -60,7 +60,7 @@ public class IHMUserStory4 extends JFrame {
 	
     }
     public IHMUserStory4(String file) {
-    		us = new UserStory1();	   
+    		us = new XMLPublicationTask4();	   
     		//file_name="../dblp_US2-3.xml";
     		file_name=file;
             setTitle("SIA2 - Task4");
