@@ -22,13 +22,13 @@ public class UserStory1Test {
         
         for (String mapKey : listCoAuthor.keySet()) {
             // utilise ici hashMap.get(mapKey) pour accéder aux valeurs
-            //System.out.println("Key: "+mapKey);
+            System.out.println("Key: "+mapKey);
             checkJunit +="Key: "+mapKey;
             for(int i=0;i< listCoAuthor.get(mapKey).size();i++){
-                //System.out.println("Coauthors: "+ listCoAuthor.get(mapKey).get(i));
+                System.out.println("Coauthors: "+ listCoAuthor.get(mapKey).get(i));
                 checkJunit +="Coauthors: "+ listCoAuthor.get(mapKey).get(i);
             }    
-                 //System.out.println("--------------------------------***");
+                 System.out.println("--------------------------------***");
         }
         
         assertEquals(checkJunit,"Key: Rick RossCoauthors: Stefano CeriKey: Stefano CeriCoauthors: Raghu RamakrishnanCoauthors: Rick RossKey: Raghu RamakrishnanCoauthors: Stefano Ceri");

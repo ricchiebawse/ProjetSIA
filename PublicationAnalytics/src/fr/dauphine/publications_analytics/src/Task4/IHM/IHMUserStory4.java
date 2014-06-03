@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.EventQueue;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -37,6 +39,7 @@ public class IHMUserStory4 extends JFrame {
     private XMLPublicationTask4 us;
     private JButton b2;
     private String file_name;
+    private Map<String, List<String>> test ;
     
     private void setList(ArrayList<String> author, JPanel p, String authorName, int currentPanel){
     	//Ajout de la liste des co-auteurs de author dans la JList de la JPanel p		
@@ -48,7 +51,7 @@ public class IHMUserStory4 extends JFrame {
 		p.add(scrollPane);
 		
 		//On recherche les co-auteurs de l'auteur sélectionné
-		Map<String,List<String>> test = us.get_cohauthor_by_data(file_name,author,"*");
+		test = us.get_cohauthor_by_data(file_name,author,"*");
 		JList list = new JList(test.get(authorName).toArray());
 		if(listJlist.size()<=currentPanel){
 			listJlist.add(list);
@@ -60,7 +63,9 @@ public class IHMUserStory4 extends JFrame {
 	
     }
     public IHMUserStory4(String file) {
-    		us = new XMLPublicationTask4();	   
+    		us = new XMLPublicationTask4();	
+    		test = new HashMap<String, List<String>>();
+    		
     		//file_name="../dblp_US2-3.xml";
     		file_name=file;
             setTitle("SIA2 - Task4");
@@ -98,9 +103,11 @@ public class IHMUserStory4 extends JFrame {
             cardPanel.add(p4, "4");
             JPanel buttonPanel = new JPanel();
             JButton b1 = new JButton("Previous");
+            JButton b3 = new JButton("Export CSV");
             b2 = new JButton("Next");
             buttonPanel.add(b1);
             buttonPanel.add(b2);
+            buttonPanel.add(b3);
             b1.addActionListener(new ActionListener() {
                     public void actionPerformed(ActionEvent arg0) {
                     	//boutton previous
@@ -138,6 +145,18 @@ public class IHMUserStory4 extends JFrame {
                             }
                     }
             });
+            
+            b3.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent arg0) {
+                	//bouton Export csv
+                	//Exporte la list de coauteurs courantes dans un fichier csv dans le repertoire documents
+                	Date currentdate = new Date();
+                	String filename = "/Users/ricchie/Documents/Export_"+currentdate.toString()+".csv";
+                	//String filename = "/Users/ricchie/Documents/Export_"+currentdate.getTime()+".csv";
+
+                	StaticMethods.exportCSV(filename, test);
+                }
+        });
             getContentPane().add(cardPanel, BorderLayout.NORTH);
             getContentPane().add(buttonPanel, BorderLayout.SOUTH);
     }
